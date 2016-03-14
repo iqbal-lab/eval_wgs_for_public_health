@@ -14,6 +14,7 @@
 		- [VCF Subsetting](#vcf-subsetting)
 
 <!-- /TOC -->
+
 # Hackathon
 
 ## Working directories in cyloid
@@ -21,11 +22,11 @@
 ## Bam files QC
 [all BAM (clusters) flagstat QC](./allsamplesflagstat.tsv)
 
+[all BAM (clusters) cov stats](./allsamples_cov.tsv)
+
 [H37rv BAMs flagstat QC](./insilicoflagstats.tsv)
 
-[H37rv covs stats](./insilico_cvs.tsv)
-
-
+[H37rv cov stats](./insilico_covs.tsv)
 
 
 ## Cortex vs platypus vs compass using 4 different references and 4 different samples
