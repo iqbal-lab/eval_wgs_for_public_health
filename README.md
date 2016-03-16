@@ -1,7 +1,9 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [Hackathon](#hackathon)
-	- [Working directories in cyloid](#working-directories-in-cyloid)
+	- [Resources directories in cyloid](#resources-directories-in-cyloid)
+		- [BAMS and references](#bams-and-references)
+		- [Scripts](#scripts)
 	- [Bam files QC](#bam-files-qc)
 	- [Cortex vs platypus vs compass using 4 different references and 4 different samples](#cortex-vs-platypus-vs-compass-using-4-different-references-and-4-different-samples)
 	- [Workbench (playing with vcf's)](#workbench-playing-with-vcfs)
@@ -13,11 +15,36 @@
 		- [VCF union and difference](#vcf-union-and-difference)
 		- [VCF Subsetting](#vcf-subsetting)
 
-<!-- /TOC -->
+
 
 # Hackathon
 
-## Working directories in cyloid
+
+
+
+## Resources directories in cyloid
+
+All data is found under: **/data2/users/ALL/HACKATHON/**.
+**FASTA** files for the **references** are found in /data2/users/ALL/HACKATHON/**references**.
+
+### BAMS and references
+
+The insilico mutations for the references are described in a **JSON** file found in /data2/users/ALL/HACKATHON/references/**InsilicoMuts.json**.
+
+bams for the clusters and resistant samples are found in **/data2/users/ALL/HACKATHON/bams**.
+
+bams for the H37rv samples are found in **/data2/users/ALL/HACKATHON/bams-h37rv**
+
+If you want to access the bams in a more **human readable** format and better structured check **/data2/users/ALL/HACKATHON/bams_readable**
+
+Tests have been executed under:  **/data2/users/ALL/HACKATHON/TESTS** where we can find directories for:
+**CORTEX**, **COMPASS** and **PLATYPUS**.
+
+### Scripts
+
+Under each of the TEST directories you will find directories called **python** containing some scripts.
+
+**/data2/users/ALL/HACKATHON/TESTS/[CORTEX/COMPASS/PLATYPUS]/python/analyze.py**: This script reads  the vcf outputs and generates statistics + pkl file containing info for the workbench.
 
 ## Bam files QC
 [all BAM (clusters) flagstat QC](./allsamplesflagstat.tsv)
