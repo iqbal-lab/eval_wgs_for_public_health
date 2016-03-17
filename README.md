@@ -83,10 +83,13 @@ SEE: [insilicotests.tsv](./insilicotests.tsv)
 ## Sensitivity graphs
 R39-82
 ![alt text](./images/sp1.png)
+
 R39-926
 ![alt text](./images/sp2.png)
+
 R39-8844
 ![alt text](./images/sp3.png)
+
 R39-87977
 ![alt text](./images/sp4.png)
 
