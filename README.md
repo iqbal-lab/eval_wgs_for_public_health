@@ -34,7 +34,7 @@ All data is found under: **/data2/users/ALL/HACKATHON/**.
 
 ### BAMS and references
 
-The insilico mutations for the references are described in a **JSON** file found in /data2/users/ALL/HACKATHON/references/**InsilicoMuts.json**.
+The insilico mutations for the references are described in a **JSON** file found in /data2/users/ALL/HACKATHON/references/**InsilicoMuts.json**. These muts are all in 0-base coordinates.
 
 bams for the clusters and resistant samples are found in **/data2/users/ALL/HACKATHON/bams**.
 
