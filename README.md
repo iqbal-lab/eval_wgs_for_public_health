@@ -6,8 +6,11 @@
 		- [Scripts](#scripts)
 	- [Bam files QC](#bam-files-qc)
 	- [Cortex vs platypus vs compass using 4 different references and 4 different samples](#cortex-vs-platypus-vs-compass-using-4-different-references-and-4-different-samples)
-	- [Sensitivity graphs](#sensitivity-graphs)
-	- [False positives graphs](#false-positives-graphs)
+	- [Sensitivity graphs (SPIKED TESTS)](#sensitivity-graphs-spiked-tests)
+	- [False positives graphs (SPIKED TESTS)](#false-positives-graphs-spiked-tests)
+	- [Cluster tests](#cluster-tests)
+		- [Distance  distributions](#distance-distributions)
+		- [Cluster convergence](#cluster-convergence)
 	- [Workbench (playing with vcf's)](#workbench-playing-with-vcfs)
 		- [Basics](#basics)
 		- [Displaying VCF records](#displaying-vcf-records)
@@ -81,7 +84,7 @@ have different number of reads. I lebelled them by the number of MB they occupy 
 
 SEE: [insilicotests.tsv](./insilicotests.tsv)
 
-## Sensitivity graphs
+## Sensitivity graphs (SPIKED TESTS)
 R39-82
 ![alt text](./images/sp1.png)
 
@@ -94,7 +97,7 @@ R39-8844
 R39-87977
 ![alt text](./images/sp4.png)
 
-## False positives graphs
+## False positives graphs (SPIKED TESTS)
 R39-82
 ![alt text](./images/spc1.png)
 
@@ -107,7 +110,18 @@ R39-8844
 R39-87977
 ![alt text](./images/spc4.png)
 
+## Cluster tests
 
+### Distance  distributions
+![alt text](./images/cmp-c1.png)![alt text](./images/pla-c1.png)![alt text](./images/ctx-c1.png)
+
+![alt text](./images/cmp-c2.png)![alt text](./images/pla-c2.png)![alt text](./images/ctx-c2.png)
+
+### Cluster convergence
+
+![alt text](./images/cpm-clt1.png)
+![alt text](./images/pla-ctl11.png)
+![alt text](./images/ctx-clt1.png)
 ## Workbench (playing with vcf's)
 
 There is a workbench setup (python app) in order to play and compare different VCF's.
