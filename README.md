@@ -6,6 +6,7 @@
 		- [Scripts](#scripts)
 	- [Bam files QC](#bam-files-qc)
 	- [Cortex vs platypus vs compass using 4 different references and 4 different samples](#cortex-vs-platypus-vs-compass-using-4-different-references-and-4-different-samples)
+	- [Sensitivity graphs](#sensitivity-graphs)
 	- [Workbench (playing with vcf's)](#workbench-playing-with-vcfs)
 		- [Basics](#basics)
 		- [Displaying VCF records](#displaying-vcf-records)
@@ -15,7 +16,7 @@
 		- [VCF union and difference](#vcf-union-and-difference)
 		- [VCF Subsetting](#vcf-subsetting)
 
-
+<!-- /TOC -->
 
 # Hackathon
 
@@ -78,6 +79,18 @@ have different number of reads. I lebelled them by the number of MB they occupy 
 
 
 SEE: [insilicotests.tsv](./insilicotests.tsv)
+
+## Sensitivity graphs
+R39-82
+![alt text](./images/sp1.png)
+R39-926
+![alt text](./images/sp2.png)
+R39-8844
+![alt text](./images/sp3.png)
+R39-87977
+![alt text](./images/sp4.png)
+
+
 
 ## Workbench (playing with vcf's)
 
