@@ -27,3 +27,13 @@ We have set up a variety of tests:
 If we have time we also have
 
 6. Replicates
+
+# Deliverables
+
+There are some extra deliverables, over and above what we said above:
+
+ 1. Automated analysis of callsets against the above datasets/tests
+ 2. Maybe reorganise this repo so one directory per test, plus a summary markup file per test?
+
+
+
