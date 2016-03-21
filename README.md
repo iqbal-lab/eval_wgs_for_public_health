@@ -15,7 +15,7 @@ We have set up a variety of tests:
 
  1. "Spiked references": create 4 modified versions of M. tuberculosis reference genome with increasing numbers of SNPs added (distributed uniformly). Use real/empirical Illumina data from the same type strain: a pipeline should call precisely the SNPs we put into the reference, in theory. In practise, one does need to handle mutations that have occurred in the strain since the reference was assembled.
 
- 2. Walker cluster data: a dataset of ~50 samples from a well studied outbreak. Dataset contains two clusters, plus non-cluster samples. 
+ 2. Sanity test: Walker cluster data: a dataset of ~50 samples from a well studied outbreak. Dataset contains two clusters, plus non-cluster samples. 
 
  3. Resistotyping: the Walker cluster dataset also has standard DST data for comparison with in silico predictions.
 
