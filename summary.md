@@ -127,7 +127,7 @@ R39-87977
 There is a workbench setup (python app) in order to play and compare different VCF's.
 
 ### Basics
-It is located in Cycloid (**/data2/users/ALL/HACKATHON/workbench**), demo:
+It is located in (**/data2/users/ALL/HACKATHON/workbench**), demo:
 ```python
 cd /data2/users/ALL/HACKATHON/workbench
 python wb.py
