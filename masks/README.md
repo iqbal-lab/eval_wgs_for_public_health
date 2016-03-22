@@ -1,0 +1,1 @@
+Masking ranges (two files, one based on annotation, one based on nucmer) are from https://gph.niid.go.jp/tgs-tb/ and the paper at http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0142951
