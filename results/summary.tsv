@@ -1,7 +1,7 @@
 Test	Compass	Cortex	PHE	Canada/Pilon?	Nullarbor
 H37Rv Spike	ND	ND	ND	ND	ND
-Cluster1	ND	ND	ND	ND	ND
-Cluster1	ND	ND	ND	ND	ND
-F11 Broad	ND	ND	ND	ND	ND
+Cluster1	ND	ND	https://github.com/iqbal-lab/eval_wgs_for_public_health/tree/master/results/cluster1/PHE	ND	ND
+Cluster2	ND	ND	https://github.com/iqbal-lab/eval_wgs_for_public_health/tree/master/results/cluster2/PHE	ND	ND
+F11 Broad	ND	ND	https://github.com/iqbal-lab/eval_wgs_for_public_health/tree/master/results/F11/PHE	ND	ND
 Lab contamination	ND	ND	ND	ND	ND
 Replicates	ND	ND	ND	ND	ND
