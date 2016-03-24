@@ -16,7 +16,7 @@ pilon --genome ref --frags file --vcf > gardy_f11_pilon_SRR974838.vcf (SEE LINK 
 grep 1/1 in vcf ---> gardy_f11_pilon_SRR974838.variantsonly.vcf (SEE FILE IN THIS DIRECTORY)
 
 Then...
-filter on mask file (Carlos' NC018143.2 self-blast repeats in \masks) ---> gardy_f11_pilon_SRR974838.repmasked.variantsonly.vcf (SEE FILE IN THIS DIRECTORY)
+filter using mask file to get rid of variants in 10% of Mtb genome that is super-repetitive (Carlos' NC018143.2 self-blast repeats in \masks) ---> gardy_f11_pilon_SRR974838.repmasked.variantsonly.vcf (SEE FILE IN THIS DIRECTORY)
 
 
 
