@@ -1,0 +1,67 @@
+
+0.  First get PASS variants from non-decomposed VCF
+
+grep PASS SRR974838/vcfs/SRR974838_wk_flow_I_RefCC_FINALcombined_BC_calls_at_all_k.raw.vcf > cortex.pass.vcf
+
+
+1. Add flanks to VCF
+
+ perl -I cortex/scripts/analyse_variants/bioinf-perl/lib/ cortex/scripts/analyse_variants/bioinf-perl/vcf_scripts/vcf_add_flanks.pl 32 cortex.pass.vcf H37RV NC_018143.2.fna  > cortex_called_annotated.vcf
+vcf_add_flanks.pl: 752 / 752 (100.00%) variants had flanks added
+vcf_add_flanks.pl: 752 / 752 (100.00%) variants printed
+-bash-4.1$ 
+
+
+2. Make callfile: this is a FASTA of this form:
+
+
+>var1_5p_flank
+CGTCATCCACAACTCCGACCGACGTCGACCT
+>var1_branch_1
+GCACCAAGACCAGACTGTCCCCAAACTGCACA
+>var1_branch_2
+ACACCAAGACCAGACTGTCCCCAAACTGCACA
+>var1_3p_flank
+C
+
+branch1 is always the ref allele, branch2 is the other
+
+
+ perl  cortex/scripts/analyse_variants/combine/build_pseudo_callfile_from_vcf.pl cortex_called_annotated.vcf cortex_called_annotated.fa 31
+
+
+3. Turn this into two reads, for the ref+ alt alleles
+
+ perl ~/dev/git/cortex/scripts/analyse_variants/make_branch_fasta.pl --callfile cortex_called_annotated.fa --kmer 31
+
+
+
+4. Map to F11
+
+bwa index CP000717.fa 
+[bwa_index] Pack FASTA... 0.05 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 4.30 seconds elapse.
+[bwa_index] Update BWT... 0.06 sec
+[bwa_index] Pack forward-only FASTA... 0.82 sec
+[bwa_index] Construct SA from BWT and Occ... 1.48 sec
+[main] Version: 0.7.5a-r405
+[main] CMD: bwa index CP000717.fa
+[main] Real time: 9.992 sec; CPU: 6.721 sec
+
+bwa mem CP000717.fa cortex_called_annotated.fa.branches.fasta > cortex_called_annotated.fa.branches.fasta.map_to_F11.sam
+[M::main_mem] read 1504 sequences (96567 bp)...
+[main] Version: 0.7.5a-r405
+[main] CMD: bwa mem CP000717.fa cortex_called_annotated.fa.branches.fasta
+[main] Real time: 2.134 sec; CPU: 1.531 sec
+-bash-4.1$ 
+
+
+
+5. measure true positives:
+
+ grep "NM:i:0" cortex_called_annotated.fa.branches.fasta.map_to_F11.sam | grep -c branch_2
+750
+
+
+Note if I had not grepped for PASS, so including MAPQ, I would have had 764 TPs.
