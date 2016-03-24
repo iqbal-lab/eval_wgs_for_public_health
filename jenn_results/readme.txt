@@ -12,11 +12,11 @@ Option 2
 samtools mpileup -q 20 -u ref file -I ---> gardy_f11_without_indels
 
 Option 3
-pilon --genome ref --frags file --vcf > gardy_f11_pilon_SRR974838.vcf
-grep 1/1 in vcf ---> gardy_f11_pilon_SRR974838.variantsonly.vcf
+pilon --genome ref --frags file --vcf > gardy_f11_pilon_SRR974838.vcf (SEE LINK IN THIS DIRECTORY FOR THIS FILE)
+grep 1/1 in vcf ---> gardy_f11_pilon_SRR974838.variantsonly.vcf (SEE FILE IN THIS DIRECTORY)
 
 Then...
-filter on mask file (Carlo's NC018143.2 self-blast repeats in \masks) ---> gardy_f11_pilon_SRR974838.repmasked.variantsonly.vcf
+filter on mask file (Carlos' NC018143.2 self-blast repeats in \masks) ---> gardy_f11_pilon_SRR974838.repmasked.variantsonly.vcf (SEE FILE IN THIS DIRECTORY)
 
 
 
